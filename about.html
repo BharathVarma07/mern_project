@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="href/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="href/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="href/favicon-16x16.png">
+    <link rel="manifest" href="href/site.webmanifest">
+</head>
+<body class="container-fluid">
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="data:image/jpeg;base64,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" width="30" height="30" class="d-inline-block align-top" alt="">
+                Recipe Finder
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link active" href="about.html">About</a>
+                    <a class="nav-item nav-link" href="#">Other Resources</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <br>
+        <h2>About Recipe Finder</h2>
+        <p style="text-align: center;">Recipe Finder was born out of the need to address the critical issue of food waste, which is a major contributor to climate change. The disposal of unused food leads to the release of harmful greenhouse gases, further exacerbating the environmental crisis.
+
+          Through extensive research, I discovered a solution. By guiding households on what to cook with ingredients at hand, we can significantly decrease the amount of food being discarded and, in turn, reduce food waste.
+        </p>
+        <br><br>
+        <div id="stats">
+          <h4 style="text-align: center;">Statistics</h4>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="https://www.theworldcounts.com/challenges/people-and-poverty/hunger-and-obesity/food-waste-statistics#:~:text=Roughly%20a%20third%20of%20the,world%20is%20lost%20or%20wasted.">1/3 of the world's food is wasted which is about 1.3 million tonnes of food</a></li>
+            <li class="list-group-item"><a href="https://www.theguardian.com/environment/2022/jan/20/uk-food-waste-dont-know-what-to-cook">Consumers don't know what to cook leading to high food wastage</a></li>
+            <li class="list-group-item"><a href="https://www.iberdrola.com/sustainability/food-waste">Food waste alone is responsible for about 10% of global greenhouse emission</a></li>
+          </ul>
+          <iframe title='Tons of food lost or wasted' src='https://www.theworldcounts.com/embeds/counters/101?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14' style='border: none' height='100' width='300'></iframe>
+        </div>
+        <br><br>
+        <h4>Demo</h4>
+        <div id="video">
+          <iframe class="youtube-video" src="https://www.youtube.com/embed/HdpPy2rHEl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <br><br>
+        <h4>FAQs</h4>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  What is Recipe Finder?
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Recipe Finder is a web application that allows users to search for recipes using the ingredients. This was to help reduce food waste and its environmental impacts as households can now figure out how to use ingredients instead of throwing them out.</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How does it work?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Simply type in your available ingredients into the search bar separating them with a comma</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  How can I reduce food waste and be more sustainable?
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+              <ul>
+                <li>Use Recipe Finder to plan your meals using your available ingredients</li>
+                <li>Buy food you can eat</li>
+                <li>Store food appropriately</li>
+                <li>Compost</li>
+                <li>Keep your eyes out for our "Other Resources" Page</li>
+              </ul>  
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    
+
+    <script src="recipe.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

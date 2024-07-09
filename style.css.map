@@ -1,0 +1,63 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter;
+}
+
+body a {
+  text-decoration: inherit;
+}
+
+body h2,
+body h4 {
+  color: #F4C524;
+  text-align: center;
+}
+
+body h5 {
+  text-align: center;
+}
+
+body form {
+  padding-top: 10%;
+  text-align: center;
+  margin: auto;
+}
+
+body form input {
+  width: 90%;
+  padding: 15px; 
+}
+
+body form button {
+  width: 50%;
+  background-color: green;
+  padding: 10px 20px; 
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.4s; 
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}

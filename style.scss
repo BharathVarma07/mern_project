@@ -1,0 +1,66 @@
+$color: green;
+$sec-color: #F4C524;
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Inter;
+
+  a {
+    text-decoration: inherit;
+  }
+
+  h2,
+  h4 {
+    color: $sec-color;
+    text-align: center;
+  }
+
+  h5 {
+    text-align: center;
+  }
+
+  form {
+    padding-top: 10%;
+    text-align: center;
+    margin: auto;
+
+    input {
+      width: 90%;
+      padding: 15px; 
+    }
+
+    button {
+      width: 50%;
+      background-color: $color;
+      padding: 10px 20px; 
+    }
+  }
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: background-color 0.4s; 
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
